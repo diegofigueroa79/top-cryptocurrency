@@ -1,0 +1,135 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media (max-width: 5000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 1rem;
+
+    header {
+      flex: 0;
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 1rem;
+      align-items: center;
+      font-size: xx-large;
+      margin-top: 1rem;
+
+      a.nostyle:link, a.nostyle:visited {
+        text-decoration: inherit;
+        color: inherit;
+        cursor: pointer;
+      }
+
+      div.myLinks {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 3rem;
+
+        font-size: xx-large;
+        color: rgb(0, 110, 255);
+      }
+    }
+
+    .cryptoList {
+      flex: 1;
+
+      display: flex;
+      flex-flow: column wrap;
+      overflow-x: auto;
+      gap: 1.5rem;
+      font-size: large;
+      align-items: center;
+      
+
+      .cryptoItem {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 1rem;
+        align-items: center;
+        border-top: 1px solid rgba(108, 122, 137, 0.5);
+        padding-top: 1.5rem;
+
+        .name {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 0.3rem;
+          width: 12rem;
+
+          img {
+            width: 24px;
+            height: 24px;
+          }
+
+          .nameText {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 0.5rem;
+            
+            span {
+              width: auto;
+            }
+
+            span.symbol {
+              color: gray;
+            }
+          }
+        }
+
+        span.rank {
+          width: 2rem;
+        }
+
+        span.price {
+          width: 8rem;
+        }
+
+        span.gain {
+          color: rgb(25, 218, 25);
+        }
+
+        span.loss {
+          color: red;
+        }
+
+        span.percentChange {
+          width: 5rem;
+        }
+
+        span.marketCap {
+          width: 12rem;
+        }
+
+        span.circulatingSupply {
+          width: 12rem;
+        }
+
+        span.maxSupply {
+          width: 8rem;
+        }
+      }
+    }
+
+    .cryptoItem:hover {
+      cursor: pointer;
+      border-top: 1px solid black;
+    }
+
+    footer {
+      flex: 0;
+
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+  }
+}
