@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import CryptoItem from './cryptoItem'
 import CryptoListHeading from './cryptoListHeading'
 import styles from '../../pages/home/styles.module.scss'
@@ -35,7 +36,9 @@ export default function CryptoList () {
   let coinComponent = coins.map( (coin) => {
     rank++
     return (
-      <CryptoItem coin={coin} key={coin.id} rank={rank}/>
+      <Link to={`/${coin.slug}/`} className={styles.nostyle}>
+        <CryptoItem coin={coin} key={coin.id} rank={rank}/>
+      </Link>
     )
   })
 
