@@ -1,9 +1,10 @@
 import styles from '../../pages/home/styles.module.scss'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
     <header>
-      <span>TopCryptoCurrency</span>
+      <Link to='/' className={styles.nostyle}><span>TopCryptoCurrency</span></Link>
         <div className={styles.myLinks}>
           <span>
             <a className={styles.nostyle} href="https://github.com/diegofigueroa79" rel="noreferrer" target="_blank"><i class="devicon-github-original"></i></a>
