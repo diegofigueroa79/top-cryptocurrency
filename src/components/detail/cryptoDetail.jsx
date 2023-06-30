@@ -16,7 +16,7 @@ export default function CryptoDetail() {
 
   useEffect( () => {
     async function getCoinDetail() {
-      let url = `/coins/${slug}`;
+      let url = `https://diegofigueroa.pythonanywhere.com/coins/${slug}`;
       try {
         let response = await fetch(url);
         if (response.ok) {

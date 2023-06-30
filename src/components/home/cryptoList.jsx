@@ -13,7 +13,7 @@ export default function CryptoList () {
   useEffect( () => {
     async function getCoinList() {
       try{
-        let response = await fetch("/coins/");
+        let response = await fetch("https://diegofigueroa.pythonanywhere.com/coins/");
         if(response.ok){
           let data = await response.json();
           setCoins(data);

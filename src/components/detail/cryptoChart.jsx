@@ -20,7 +20,7 @@ export default function CryptoChart() {
 
   useEffect( () => {
     async function getQuotes() {
-      let url = `/coins/history/${symbol}/day/`
+      let url = `https://diegofigueroa.pythonanywhere.com/coins/history/${symbol}/day/`
       try {
         let response = await fetch(url);
         if (response.ok) {
