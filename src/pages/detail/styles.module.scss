@@ -146,11 +146,214 @@ a.nostyle:link, a.nostyle:visited {
         justify-content: center;
         align-items: center;
         gap: 1rem;
+        margin: 1rem;
       }
     }
 
-    .cryptoChartContainer {
+    .chartContainer {
+      flex: 1;
       display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      min-width: 100%;
+
+      .chartMode {
+        flex: 1;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .chart {
+        flex: 1;
+        display: flex;
+        min-width: 100%;
+        min-height: 100%;
+      }
+    }
+
+    footer {
+      flex: 0;
+
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 1rem;
+
+    header {
+      flex: 0;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      gap: 1rem;
+      font-size: xx-large;
+      margin-top: 1rem;
+
+      div.myLinks {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 3rem;
+
+        font-size: xx-large;
+        color: rgb(0, 110, 255);
+      }
+    }
+
+    .metaContainer {
+      flex: 1;
+
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      margin-top: 1rem;
+
+      .titleContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+
+        .name {
+          display: flex;
+          flex-flow: row nowrap;
+          gap: 0.5rem;
+          font-size: x-large;
+
+          span:nth-of-type(2) {
+            color: gray;
+          }
+        }
+      }
+
+      .priceContainer {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        .priceAmount {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+          gap: 2rem;
+
+          .price {
+            font-size: x-large;
+            font-weight: bold;
+          }
+
+          .percent {
+            font-size: large;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            background-color: lightgray;
+          }
+
+          .gain {
+            background-color: rgb(25, 218, 25);
+          }
+
+          .loss {
+            background-color: red;
+          }
+        }
+
+        .priceMetrics {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+
+          .marketCap {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            gap: 1rem;
+
+            .marketCapAmount {
+              font-size: x-large;
+              font-weight: bold;
+            }
+          }
+
+          .volume {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            gap: 1rem;
+
+            .volumeAmount {
+              font-size: x-large;
+              font-weight: bold;
+            }
+          }
+
+        }
+      }
+
+      .descriptionContainer {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem;
+        max-width: 50vw;
+        font-size: large;
+      }
+    }
+
+    .chartContainer {
+      flex: 1;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      min-width: 50%;
+
+      .chartMode {
+        flex: 1;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .chart {
+        flex: 1;
+        display: flex;
+        min-width: 100%;
+        min-height: 100%;
+      }
     }
 
     footer {
