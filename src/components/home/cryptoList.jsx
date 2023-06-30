@@ -36,7 +36,7 @@ export default function CryptoList () {
   let coinComponent = coins.map( (coin) => {
     rank++
     return (
-      <Link to={`/${coin.slug}/`} className={styles.nostyle}>
+      <Link to={`/${coin.slug}/${coin.symbol}`} className={styles.nostyle}>
         <CryptoItem coin={coin} key={coin.id} rank={rank}/>
       </Link>
     )
