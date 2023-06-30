@@ -6,7 +6,7 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='/:slug' element={<Detail />} />
+      <Route path='/:slug/:symbol/' element={<Detail />} />
     </Routes>
   );
 }
