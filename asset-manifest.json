@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/top-cryptocurrency/static/css/main.e831a28d.css",
+    "main.js": "/top-cryptocurrency/static/js/main.4ee75d8d.js",
+    "index.html": "/top-cryptocurrency/index.html",
+    "main.e831a28d.css.map": "/top-cryptocurrency/static/css/main.e831a28d.css.map",
+    "main.4ee75d8d.js.map": "/top-cryptocurrency/static/js/main.4ee75d8d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e831a28d.css",
+    "static/js/main.4ee75d8d.js"
+  ]
+}
